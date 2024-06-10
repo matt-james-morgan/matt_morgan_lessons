@@ -1,6 +1,58 @@
-$backgroundColor: #f9f6e8;
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap');
 
-*{
-    background-color: $backgroundColor;
+$backgroundColor: #153448;
+$textColor:  #DFD0B8;
+
+@mixin mainFont{
+ font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
 }
 
+@mixin titleFont{
+    font-family: "Sonsie One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3em;
+}
+
+
+body {
+    background-color: $backgroundColor;
+    color: $textColor;
+    @include mainFont();
+  }
+  
+  .MuiTypography-root {
+    @include mainFont();
+  }
+
+  .MuiAppBar-root {
+    background-color: $backgroundColor;
+    color: $textColor;
+    @include mainFont();
+  }
+  
+  .MuiToolbar-root {
+    @include mainFont();
+    background-color: $backgroundColor;
+    color: $textColor;
+  }
+  
+  .MuiTypography-root {
+    @include mainFont();
+    color: $textColor;
+  }
+  
+  .MuiButtonBase-root {
+    @include mainFont();
+    color: $textColor;
+  }
+  #title{
+    @include titleFont();
+  }
+  .css-hip9hq-MuiPaper-root-MuiAppBar-root{
+    background-color: #{$backgroundColor};
+  }

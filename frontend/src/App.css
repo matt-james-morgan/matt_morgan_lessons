@@ -1,3 +1,62 @@
-* {
-  background-color: #f9f6e8;
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sonsie+One&display=swap");
+body {
+  background-color: #153448;
+  color: #DFD0B8;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.MuiTypography-root {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.MuiAppBar-root {
+  background-color: #153448;
+  color: #DFD0B8;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.MuiToolbar-root {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  background-color: #153448;
+  color: #DFD0B8;
+}
+
+.MuiTypography-root {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  color: #DFD0B8;
+}
+
+.MuiButtonBase-root {
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 700;
+  color: #DFD0B8;
+}
+
+#title {
+  font-family: "Sonsie One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3em;
+}
+
+.css-hip9hq-MuiPaper-root-MuiAppBar-root {
+  background-color: #153448;
 }/*# sourceMappingURL=App.css.map */
