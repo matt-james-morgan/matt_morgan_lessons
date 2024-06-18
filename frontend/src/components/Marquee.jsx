@@ -1,21 +1,58 @@
-import React from "react"
-import guitarImage from '../../public/images/guitarImage'
+import React from "react";
+// 1. Importing framer-motion
+import { motion } from "framer-motion";
+import img from '../images/guitarImage.png'
+import "../scss/Marquee.css";
 
-export default function Marquee() {
-    return (
-        <div className="marquee">
-            <ul className="marquee__content">
-                <div className=" marquee__item">
-                    <img src={guitarImage} alt="" />
-                </div>
-            </ul>
+// 2. Defining Variants
+const marqueeVariants = {
+  animate: {
+    x: [0, -2080], // Adjust this value to match the total width of the content
+    transition: {
+      x: {
+        repeat: Infinity,
+        repeatType: "loop",
+        duration: 10,
+        ease: "linear",
+      },
+    },
+  },
+};
 
-            <ul aria-hidden="true" className="marquee__content">
-                <div className=" marquee__item">
-                    <img src={guitarImage} alt="" />
-                </div>
-                
-            </ul>
-        </div>
-    )
-}
+
+
+const Marquee = () => {
+
+  return (
+    <div>
+      <div className="marquee">
+                {/* 3. Using framer motion */}
+        <motion.div
+          className="track"
+          variants={marqueeVariants}
+          animate="animate"
+        >
+          <h2>
+            Book Now
+            <img src={img} />
+            Book Now
+            <img src={img} />
+            Book Now
+            <img src={img} />
+            Book Now
+            <img src={img} />
+            Book Now
+            <img src={img} />
+            Book Now
+            <img src={img} />
+            Book Now
+            <img src={img} />
+          </h2>
+          
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+export default Marquee;

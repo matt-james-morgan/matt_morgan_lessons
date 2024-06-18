@@ -55,6 +55,14 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 3em;
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  align-items: center;
+}
+
+#nav {
+  background-color: #153448;
 }
 
 .css-hip9hq-MuiPaper-root-MuiAppBar-root {
