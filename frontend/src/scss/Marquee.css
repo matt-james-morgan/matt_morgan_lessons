@@ -24,5 +24,17 @@
 }
 
 img {
-  width: 50px;
+  width: 100px;
+  transform: rotate(90deg);
+}
+
+.track {
+  display: inline-block;
+}
+
+.inner-marquee-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 4420.24px;
 }/*# sourceMappingURL=Marquee.css.map */

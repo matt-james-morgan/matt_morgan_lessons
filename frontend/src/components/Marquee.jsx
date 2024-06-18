@@ -7,12 +7,12 @@ import "../scss/Marquee.css";
 // 2. Defining Variants
 const marqueeVariants = {
   animate: {
-    x: [0, -2080], // Adjust this value to match the total width of the content
+    x: [0, -2080],
     transition: {
       x: {
         repeat: Infinity,
         repeatType: "loop",
-        duration: 10,
+        duration: 5,
         ease: "linear",
       },
     },
@@ -22,33 +22,15 @@ const marqueeVariants = {
 
 
 const Marquee = () => {
-
   return (
     <div>
       <div className="marquee">
-                {/* 3. Using framer motion */}
         <motion.div
           className="track"
           variants={marqueeVariants}
           animate="animate"
         >
-          <h2>
-            Book Now
-            <img src={img} />
-            Book Now
-            <img src={img} />
-            Book Now
-            <img src={img} />
-            Book Now
-            <img src={img} />
-            Book Now
-            <img src={img} />
-            Book Now
-            <img src={img} />
-            Book Now
-            <img src={img} />
-          </h2>
-          
+          <h1>Let's Work Together. <img src={img} alt="Guitar" /></h1>
         </motion.div>
       </div>
     </div>
