@@ -6,6 +6,8 @@
   max-width: 100%;
   height: 206px;
   overflow-x: hidden;
+  background-color: $backgroundColor;
+  
 }
 
 .track {
@@ -16,16 +18,17 @@
 .track > h1 {
   margin: 20px 0;
   font-size: 3rem;
-  width: 2080px;
-  font-family: Antonio;
+  width: 1985px;
+  @include mainFont();
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: $textColor;
   text-transform: uppercase;
-  border: 1px solid red; 
+  border: 0.1px $textColor solid;
 }
 
 img{
+  margin: 0px 2%;
   width: 100px;
   transform: rotate(90deg);
 }

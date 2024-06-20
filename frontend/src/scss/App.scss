@@ -18,7 +18,9 @@
   font-size: 3em;
 }
 
-
+html{
+  background-color: $backgroundColor;
+}
 body {
     background-color: $backgroundColor;
     color: $textColor;

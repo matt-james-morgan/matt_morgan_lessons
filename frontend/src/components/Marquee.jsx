@@ -7,12 +7,12 @@ import "../scss/Marquee.css";
 // 2. Defining Variants
 const marqueeVariants = {
   animate: {
-    x: [0, -2080],
+    x: [0, -1985],
     transition: {
       x: {
         repeat: Infinity,
         repeatType: "loop",
-        duration: 5,
+        duration: 4,
         ease: "linear",
       },
     },
@@ -30,7 +30,8 @@ const Marquee = () => {
           variants={marqueeVariants}
           animate="animate"
         >
-          <h1>Let's Work Together. <img src={img} alt="Guitar" /></h1>
+          <h1>Book Now <img src={img} alt="Guitar" /> 
+           </h1>
         </motion.div>
       </div>
     </div>
